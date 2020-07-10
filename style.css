@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+.heroDiv{
+    height: 80vh;
+}
+
+.mobheroDiv{
+    display: none;
+}
+
+.heroTxt{
+    display: table;
+}
+
+.heroTxtDiv{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+footer{
+    height: 90px;
+    background-color: black;
+    color: white;
+    display: table;
+}
+
+footer div{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.copy{
+    float: left;
+    margin-left: 50px;
+}
+
+.credit{
+    float: right;
+    margin-right: 50px;
+}
+
+@media screen and (max-width: 756px){
+    .heroDiv{
+        display: none;
+    }
+
+    .mobheroDiv{
+        display: block;
+    }
+
+    footer{
+        text-align: center;
+    }
+    .copy{
+        display: block;
+        float: none;
+        margin-left: 0px;
+    }
+    
+    .credit{
+        display: block;
+        float: none;
+        margin-right: 0px;
+        margin-top: 5px;
+    }
+}
